@@ -1,0 +1,25 @@
+<main style="padding-top: 20px;">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <form>
+                    <div class="form-group">
+                        <label>{{pregunta.pregunta}}</label>
+                        
+                    </div>
+                    <div class="form-group">
+                        <table class="table table-hover">
+                            <tr ng-repeat="respuesta in pregunta.respuestas">
+                                <td ng-click="siguiente(respuesta)">{{respuesta.name}}</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="form-group">
+                        
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</main>

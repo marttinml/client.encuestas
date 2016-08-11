@@ -1,0 +1,29 @@
+<main style="padding-top: 20px;">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                    <div class="form-group">
+                        <h1><small>{{encuesta.titulo}}</small></h1>
+                    </div>
+                    <div class="form-group">
+                        <h4><small>{{encuesta.descripcion}}</small></h4>
+                    </div>
+                    <div class="form-group">
+                        <h4><small>Autor: Martín Mtz</small></h4>
+                    </div>
+                    <div class="form-group">
+                        <h4><small>Dirección: {{encuesta.direccion.name}}</small></h4>
+                    </div>
+                    <div class="form-group">
+                        <h4><small>Vigencia: {{encuesta.date | date:'dd/MMM'}} - {{encuesta.valides | date:'dd/MMM'}}</small></h4>
+                    </div>
+                    <div class="form-group">
+                        <h4><small>Duración: {{encuesta.tiempo / 60}} Min</small></h4>
+                    </div>
+                    
+                    <button type="button" class="btn btn-primary btn-lg btn-block" ng-click="contestar()">Contestar</button>
+            </div>
+
+        </div>
+    </div>
+</main>
